@@ -2,13 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Юлия Юрьевна — управляющая, медицинский юрист">
   <title>Юлия Юрьевна</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
   <link rel="icon" href="photo/avatar.jpg" type="image/jpeg">
 </head>
 <body>
@@ -27,8 +27,7 @@
 
     <div class="card__body">
       <h1 class="card__name">Юлия Юрьевна</h1>
-      <p class="card__title">Управляющая</p>
-      <p class="card__title card__title--second">Медицинский юрист</p>
+      <p class="card__title">Управляющая · Медицинский юрист</p>
 
       <a class="btn btn--primary" href="contact.vcf" download="Юлия_Юрьевна.vcf">
         Сохранить в контакты
@@ -36,27 +35,37 @@
 
       <div class="links-grid">
         <a class="link-card" href="https://t.me/YU18YU" target="_blank" rel="noopener noreferrer">
-          <img class="link-card__logo" src="icons/telegram.svg" width="48" height="48" alt="">
+          <img class="link-card__logo" src="icons/telegram.svg" width="40" height="40" alt="">
           <span class="link-card__label">Telegram</span>
         </a>
-
         <a class="link-card" href="https://max.ru/u/f9LHodD0cOL_HrG1ihCOvhenVAKla0ivn3VlDrTdwTqNVcTAOvn2TGo3qvQ" target="_blank" rel="noopener noreferrer">
-          <img class="link-card__logo" src="icons/max.png" width="48" height="48" alt="">
+          <img class="link-card__logo" src="icons/max.png" width="40" height="40" alt="">
           <span class="link-card__label">MAX</span>
         </a>
       </div>
 
-      <a class="email-card" href="mailto:julita89@mail.ru">
-        <span class="email-card__icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="3"/>
-            <path d="m2 7 10 7 10-7"/>
-            <path d="m2 17 8-5 6 5"/>
-          </svg>
-        </span>
-        <span class="email-card__label">Email</span>
-        <span class="email-card__value">julita89@mail.ru</span>
-      </a>
+      <div class="contacts">
+        <a class="contact-card" href="tel:+79110740104">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="contact-card__label">Телефон</span>
+          <span class="contact-card__value">+7 (911) 074-01-04</span>
+        </a>
+
+        <a class="contact-card" href="mailto:julita89@mail.ru">
+          <span class="contact-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="3"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+          </span>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">julita89@mail.ru</span>
+        </a>
+      </div>
     </div>
   </main>
 </body>
