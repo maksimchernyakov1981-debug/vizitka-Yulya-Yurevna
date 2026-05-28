@@ -1,0 +1,26 @@
+{
+  "headers": [
+    {
+      "source": "/photo/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/public/contact.vcf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vcard; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"Юлия_Юрьевна.vcf\""
+        }
+      ]
+    }
+  ]
+}
