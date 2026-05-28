@@ -1,4 +1,10 @@
 {
+  "version": 2,
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "public",
+  "cleanUrls": true,
   "headers": [
     {
       "source": "/photo/(.*)",
@@ -10,7 +16,7 @@
       ]
     },
     {
-      "source": "/public/contact.vcf",
+      "source": "/contact.vcf",
       "headers": [
         {
           "key": "Content-Type",

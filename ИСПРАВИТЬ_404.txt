@@ -1,0 +1,34 @@
+ИСПРАВЛЕНИЕ 404 — сделайте один раз на GitHub
+==========================================
+
+Причина: Vercel отдаёт папку public, а index.html был в корне.
+
+ШАГ 1. На GitHub откройте репозиторий vizitka-Yulya-Yurevna
+ШАГ 2. Откройте папку public
+ШАГ 3. Нажмите Add file → Upload files
+ШАГ 4. Загрузите с компьютера из папки D:\1\Визитка Прогноз\public:
+
+   index.html
+   contact.vcf
+   папку css (с style.css внутри)
+   папку photo (с avatar.jpg внутри)
+   папку icons (telegram.svg и max.png внутри)
+
+   Если файлы уже есть — перезапишите (Replace).
+
+ШАГ 5. Commit changes
+
+ШАГ 6. В корне репозитория загрузите новый vercel.json
+       (из D:\1\Визитка Прогноз\vercel.json)
+
+ШАГ 7. Vercel → Deployments → Redeploy → Ready → Visit
+
+Проверка: https://vizitka-yulya-yurevna.vercel.app/index.html
+
+В папке public на GitHub должно быть:
+  public/index.html
+  public/contact.vcf
+  public/css/style.css
+  public/photo/avatar.jpg
+  public/icons/telegram.svg
+  public/icons/max.png

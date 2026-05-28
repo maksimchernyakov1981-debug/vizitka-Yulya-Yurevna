@@ -1,0 +1,31 @@
+Если на сайте ошибка 404 NOT_FOUND
+==================================
+
+Причина почти всегда: на GitHub файлы лежат НЕ в корне репозитория.
+
+ПРАВИЛЬНО (на github.com при открытии репозитория сразу видно):
+  index.html
+  vercel.json
+  папки: css, photo, icons, public
+
+НЕПРАВИЛЬНО (так бывает при загрузке всей папки целиком):
+  Визитка Прогноз/index.html
+  Визитка Прогноз/css/...
+
+Как исправить на GitHub:
+1. Откройте репозиторий на github.com
+2. Зайдите во вложенную папку, если index.html внутри неё
+3. Откройте каждый файл → Edit → скопируйте в корень репозитория
+   ИЛИ удалите репозиторий и загрузите файлы из папки по одному
+   (index.html, css, photo, icons, public, vercel.json) в КОРЕНЬ
+
+Настройки проекта в Vercel (Settings → General → Build and Deployment):
+  Root Directory: пусто (или ./)
+  Framework Preset: Other
+  Build Command: пусто
+  Output Directory: пусто (НЕ public, НЕ css)
+
+После исправления: Deployments → три точки → Redeploy.
+
+Проверка: откройте https://ВАШ-ПРОЕКТ.vercel.app/index.html
+Если index.html открывается — сайт настроен верно.
